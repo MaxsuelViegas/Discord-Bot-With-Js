@@ -11,3 +11,4 @@ const TOKEN = process.env.TOKEN
 const LOAD_SLASH = process.argv[2] == "load"
 
 const CLIENT_ID = "" 
+const GUILD_ID = ""
