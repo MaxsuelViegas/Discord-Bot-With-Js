@@ -4,3 +4,6 @@ const { REST } = require("@discordjs/rest")
 const { Routes } = require("discord-api-types/v9")
 const fs = require("fs")
 const { Player } = require("discord-player")
+
+dotenv.config()
+const TOKEN = process.env.TOKEN
