@@ -27,4 +27,12 @@ client.player = new Player(client, {
         highWaterMark: 1 << 25
     }
 })
+let commands = []
+
+const slashFiles = fs.readdirSync("./slash").filter(file => file.endsWith(".js"))
+for (const file of slashFiles){
+    const slashcmd = require(`./slash/${file}`)
+    client.slashcommands.set(slashcmd.data.name, slashcmd)
+    if (LOAD_SLASH) commands.push(slashcmd.data.toJSON())
+}
 
