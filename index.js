@@ -50,3 +50,21 @@ if (LOAD_SLASH) {
         }
     })
 }
+else {
+    client.on("ready", () => {
+        console.log(`Logged in as ${client.user.tag}`)
+    })
+    client.on("interactionCreate", (interaction) => {
+        async function handleCommand() {
+            if (!interaction.isCommand()) return
+
+            const slashcmd = client.slashcommands.get(interaction.commandName)
+            if (!slashcmd) interaction.reply("Is not a valid command")
+
+            await interaction.deferReply()
+            await slashcmd.run({ client, interaction })
+        }
+        handleCommand()
+    })
+    client.login(TOKEN)
+}
