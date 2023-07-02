@@ -13,3 +13,4 @@ module.exports = {
             return await interaction.editReply("Não tem músicas na fila")
         }
  const totalPages = Math.ceil(queue.tracks.length / 10) || 1
+ const page = (interaction.options.getNumber("pag") || 1) - 1
