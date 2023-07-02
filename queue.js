@@ -12,3 +12,4 @@ module.exports = {
         if (!queue || !queue.playing){
             return await interaction.editReply("Não tem músicas na fila")
         }
+ const totalPages = Math.ceil(queue.tracks.length / 10) || 1
