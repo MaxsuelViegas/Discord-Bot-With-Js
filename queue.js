@@ -26,4 +26,17 @@ if (page > totalPages)
      
         const currentSong = queue.current
 await interaction.editReply({
-            embeds:    
+            embeds:  [
+                new MessageEmbed()
+                    .setDescription(`**Tocando atualmente**\n` + 
+                    (currentSong ? `\`[${currentSong.duration}]\` ${currentSong.title} -- <@${currentSong.requestedBy.id}>` : "N") +
+                    `\n\n**Queue**\n${queueString}`
+                    )
+                    .setFooter({
+                        text: `Page ${page + 1} of ${totalPages}`
+                    })
+                    .setThumbnail(currentSong.setThumbnail)
+            ]
+        })
+    }
+}  
