@@ -8,7 +8,7 @@ module.exports = {
 	run: async ({ client, interaction }) => {
 		const queue = client.player.getQueue(interaction.guildId)
 
-		if (!queue) return await interaction.editReply("Não tem música na fila")
+	if (!queue) return await interaction.editReply("Não tem música na fila")
 
         const trackNum = interaction.options.getNumber("Numero Fila")
 		
