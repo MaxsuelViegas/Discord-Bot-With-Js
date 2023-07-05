@@ -6,7 +6,7 @@ module.exports = {
     .addNumberOption((option) => 
         option.setName("Numero Fila").setDescription("Pular para").setMinValue(1).setRequired(true)),
 	run: async ({ client, interaction }) => {
-		const queue = client.player.getQueue(interaction.guildId)
+	const queue = client.player.getQueue(interaction.guildId)
 
 	if (!queue) return await interaction.editReply("Não tem música na fila")
 
