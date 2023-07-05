@@ -1,6 +1,7 @@
 const { SlashCommandBuilder } = require("@discordjs/builders")
 
 module.exports = {
+	
 	data: new SlashCommandBuilder().setName("Pular Para").setDescription("Pula para a música selecionada #")
     .addNumberOption((option) => 
         option.setName("Numero Fila").setDescription("Pular para").setMinValue(1).setRequired(true)),
