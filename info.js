@@ -9,3 +9,14 @@ if (!queue) return await interaction.editReply("Não tem música na fila")
 			queue: false,
 			length: 19,
 		})
+
+        const song = queue.current
+
+		await interaction.editReply({
+			embeds: [new MessageEmbed()
+            .setThumbnail(song.thumbnail)
+            .setDescription(`Tocando agora [${song.title}](${song.url})`)
+        ],
+		})
+	},
+}
