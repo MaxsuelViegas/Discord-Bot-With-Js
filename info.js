@@ -6,7 +6,7 @@ module.exports = {
 	data: new SlashCommandBuilder().setName("info").setDescription("Show info of the song that is playing"),
 	run: async ({ client, interaction }) => {
 		const queue = client.player.getQueue(interaction.guildId)
-if (!queue) return await interaction.editReply("")
+if (!queue) return await interaction.editReply("There is no music in the queue")
 		
 	let bar = queue.createProgressBar({
 			queue: false,
