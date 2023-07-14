@@ -11,7 +11,7 @@ module.exports = {
 		.addSubcommand((subcommand) =>
 			subcommand
 				.setName("Música")
-				.setDescription("Toca uma música por url")
+				.setDescription("")
 				.addStringOption((option) => option.setName("url").setDescription("url da música").setRequired(true))
 		)
 		.addSubcommand((subcommand) =>
