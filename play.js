@@ -7,7 +7,7 @@ const { QueryType } = require("discord-player")
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName("play")
-		.setDescription("Toca uma música do YouTube")
+		.setDescription("")
 		.addSubcommand((subcommand) =>
 			subcommand
 				.setName("Música")
