@@ -17,7 +17,7 @@ module.exports = {
 		.addSubcommand((subcommand) =>
 			subcommand
 				.setName("playlist")
-				.setDescription(" url")
+				.setDescription("Play a playlist by url")
 				.addStringOption((option) => option.setName("url").setDescription("playlist's url").setRequired(true))
 		)
 		.addSubcommand((subcommand) =>
