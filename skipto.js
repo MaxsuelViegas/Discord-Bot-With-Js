@@ -11,7 +11,7 @@ module.exports = {
 
 	if (!queue) return await interaction.editReply("Não tem música na fila")
 
-        const trackNum = interaction.options.getNumber("Numero Fila")
+        const trackNum = interaction.options.getNumber("Número Fila")
 		
         if (trackNum > queue.tracks.length)
 		
