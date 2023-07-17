@@ -10,6 +10,6 @@ module.exports = {
 		if (!queue) return await interaction.editReply("Não tem música na fila")
 
 		queue.setPaused(true)
-        await interaction.editReply("Music has been paused! Use `/resume` para continuar a reproduzir")
+        await interaction.editReply("Music has been paused! Use `/resume` to play it again!")
 	},
 }
