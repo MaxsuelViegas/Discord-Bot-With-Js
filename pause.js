@@ -7,7 +7,7 @@ module.exports = {
 		
 		const queue = client.player.getQueue(interaction.guildId)
 
-		if (!queue) return await interaction.editReply("Não tem música na fila")
+		if (!queue) return await interaction.editReply("")
 
 		queue.setPaused(true)
         await interaction.editReply("Music has been paused! Use `/resume` to play it again!")
