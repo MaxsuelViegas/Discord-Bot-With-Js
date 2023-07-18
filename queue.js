@@ -4,7 +4,7 @@ const { MessageEmbed } = require("discord.js")
 module.exports = {
     data: new SlashCommandBuilder()
     .setName("Fila")
-    .setDescription("")
+    .setDescription("Show info about the current song")
     .addNumberOption((option) => option.setName("pag").setDescription("Número de pag da fila").setMinValue(1)),
     
  run: async ({ client, interaction }) => {
