@@ -4,7 +4,7 @@ module.exports = {
 	
 	data: new SlashCommandBuilder().setName("Jump to").setDescription("Pula para a música selecionada #")
     .addNumberOption((option) => 
-        option.setName("Numero Fila").setDescription("Pular para").setMinValue(1).setRequired(true)),
+        option.setName("Numero Fila").setDescription("").setMinValue(1).setRequired(true)),
 	run: async ({ client, interaction }) => {
 		
 	const queue = client.player.getQueue(interaction.guildId)
