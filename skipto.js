@@ -9,7 +9,7 @@ module.exports = {
 		
 	const queue = client.player.getQueue(interaction.guildId)
 
-	if (!queue) return await interaction.editReply("")
+	if (!queue) return await interaction.editReply("There are no songs in the queue")
 
         const trackNum = interaction.options.getNumber("Número Fila")
 		
