@@ -10,7 +10,7 @@ module.exports = {
 		.setDescription("play a youtube music")
 		.addSubcommand((subcommand) =>
 			subcommand
-				.setName("")
+				.setName("music")
 				.setDescription("play a song by url")
 				.addStringOption((option) => option.setName("url").setDescription("url da música").setRequired(true))
 		)
