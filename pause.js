@@ -1,7 +1,7 @@
 const { SlashCommandBuilder } = require("@discordjs/builders")
 
 module.exports = {
-	data: new SlashCommandBuilder().setName("").setDescription("pause the current song"),
+	data: new SlashCommandBuilder().setName("pause").setDescription("pause the current song"),
 	
 	run: async ({ client, interaction }) => {
 		
