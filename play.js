@@ -22,7 +22,7 @@ module.exports = {
 		)
 		.addSubcommand((subcommand) =>
 			subcommand
-				.setName("")
+				.setName("Search")
 				.setDescription("Search for the song's in youtube")
 				.addStringOption((option) =>
 					option.setName("Buscar").setDescription("Busca").setRequired(true)
