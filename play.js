@@ -25,7 +25,7 @@ module.exports = {
 				.setName("Search")
 				.setDescription("Search for the song's in youtube")
 				.addStringOption((option) =>
-					option.setName("Search").setDescription("Busca").setRequired(true)
+					option.setName("Search").setDescription("").setRequired(true)
 				)
 		),
 
