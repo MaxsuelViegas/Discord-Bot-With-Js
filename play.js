@@ -44,7 +44,7 @@ module.exports = {
                 searchEngine: QueryType.YOUTUBE_VIDEO
             })
             if (result.tracks.length === 0)
-                return interaction.editReply("Sem resultados")
+                return interaction.editReply("")
 
             const song = result.tracks[0]
             await queue.addTrack(song)
