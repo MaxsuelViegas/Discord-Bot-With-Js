@@ -37,7 +37,7 @@ module.exports = {
 
 		let embed = new MessageEmbed()
 
-		if (interaction.options.getSubcommand() === "Música") {
+		if (interaction.options.getSubcommand() === "") {
             let url = interaction.options.getString("url")
             const result = await client.player.search(url, {
                 requestedBy: interaction.user,
