@@ -30,7 +30,7 @@ module.exports = {
 		),
 
 	run: async ({ client, interaction }) => {
-		if (!interaction.member.voice.channel) return interaction.editReply("Você precisa estar em um canal de Voz")
+		if (!interaction.member.voice.channel) return interaction.editReply("")
 
 		const queue = await client.player.createQueue(interaction.guild)
 		if (!queue.connection) await queue.connect(interaction.member.voice.channel)
