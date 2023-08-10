@@ -61,7 +61,7 @@ module.exports = {
             })
 
             if (result.tracks.length === 0)
-                return interaction.editReply("Sem resultado")
+                return interaction.editReply("")
 
             const playlist = result.playlist
             await queue.addTracks(result.tracks)
