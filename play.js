@@ -66,7 +66,7 @@ module.exports = {
             const playlist = result.playlist
             await queue.addTracks(result.tracks)
             embed
-                .setDescription(`**${result.tracks.length} Música de [${playlist.title}](${playlist.url})** `)
+                .setDescription(`**${result.tracks.length} Música de [${playlist.title}](${playlist.url})** was added to the queue`)
                 .setThumbnail(playlist.thumbnail)
 		} else if (interaction.options.getSubcommand() === "Busca") {
             let url = interaction.options.getString("Buscar")
