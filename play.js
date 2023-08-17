@@ -68,7 +68,7 @@ module.exports = {
             embed
                 .setDescription(`**${result.tracks.length} Música de [${playlist.title}](${playlist.url})** was added to the queue`)
                 .setThumbnail(playlist.thumbnail)
-		} else if (interaction.options.getSubcommand() === "") {
+		} else if (interaction.options.getSubcommand() === "Search") {
             let url = interaction.options.getString("Buscar")
             const result = await client.player.search(url, {
                 requestedBy: interaction.user,
