@@ -81,7 +81,7 @@ module.exports = {
             const song = result.tracks[0]
             await queue.addTrack(song)
             embed
-                .setDescription(`**[${song.title}](${song.url})** foi adicionado á fila`)
+                .setDescription(`**[${song.title}](${song.url})** `)
                 .setThumbnail(song.thumbnail)
                 .setFooter({ text: `Duração: ${song.duration}`})
 		}
